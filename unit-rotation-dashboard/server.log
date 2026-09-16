@@ -1,0 +1,195 @@
+
+  UNIT live dashboard -> http://127.0.0.1:5050
+  camera: http://192.168.1.241:8080   serial: auto (USB 37c5:16e3)
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5050
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [11/Sep/2026 15:24:00] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:00] "GET /live/stream HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:01] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:01] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:05] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:05] "POST /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:06] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:08] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:10] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:14] "[36mGET /static/mark.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:24:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:24:14] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:24:14] "GET /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:14] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:14] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:14] "GET /live/stream?1789129454275 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:24:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Sep/2026 15:25:40] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:41] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:25:41] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:25:41] "[36mGET /static/mark.svg HTTP/1.1[0m" 304 -
+
+  UNIT live dashboard -> http://127.0.0.1:5050
+  camera: http://192.168.1.241:8080   serial: auto (USB 37c5:16e3)
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5050
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "[36mGET /static/mark.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET /live/stream?1789129544264 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:44] "GET /live/stream?1789129544869 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:45] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:51] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:51] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:25:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:25:51] "[36mGET /static/mark.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:25:51] "GET /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:51] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:51] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:54] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:56] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:58] "GET /live/stream?1789129551756 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:58] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:25:59] "GET /api/status HTTP/1.1" 200 -
+
+  UNIT live dashboard -> http://127.0.0.1:5050
+  camera: http://192.168.1.241:8080   serial: auto (USB 37c5:16e3)
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5050
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [11/Sep/2026 15:26:10] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:10] "[36mGET /static/mark.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:26:10] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:26:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:26:10] "GET /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:10] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:10] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:10] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:10] "GET /live/stream?1789129570189 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:11] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:18] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:26:18] "[36mGET /static/mark.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:26:18] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:26:18] "GET /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:18] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:18] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:18] "GET /live/stream?1789129578152 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:26:20] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:08] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:27:08] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:27:08] "[36mGET /static/mark.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:27:08] "GET /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:08] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:08] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:08] "GET /live/stream?1789129628479 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:33] "GET /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:33] "GET /api/camera/stream HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:54] "POST /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:55] "POST /api/camera/stream HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:55] "GET /live/stream?1789129675315 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:27:58] "GET /live/stream?1789129678118 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:26] "POST /api/record/start HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:26] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:28] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:29] "POST /api/record/stop HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:29] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:30] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:31] "GET /api/session/20260911-152826-cee3f3 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:31] "GET /media/20260911-152826-cee3f3/frames.csv HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:31] "[35m[1mGET /media/20260911-152826-cee3f3/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [11/Sep/2026 15:28:31] "GET /media/20260911-152826-cee3f3/video_index.csv HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:31] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:36] "GET /live/stream?1789129716489 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:36] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:38] "GET /api/session/20260911-152826-cee3f3 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:28:38] "[36mGET /media/20260911-152826-cee3f3/frames.csv HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:28:38] "[36mGET /media/20260911-152826-cee3f3/video_index.csv HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:28:38] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:29:42] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:29:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:29:42] "[36mGET /static/mark.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:29:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:29:42] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [11/Sep/2026 15:29:42] "GET /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:29:42] "GET /api/live/events HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:29:42] "GET /live/stream?1789129782308 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:29:42] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:17] "POST /api/record/start HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:17] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:19] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:21] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:23] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:25] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:27] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:29] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:31] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:33] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:35] "POST /api/record/stop HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:35] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:35] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:38] "GET /api/session/20260911-153017-6c3afe HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:38] "GET /media/20260911-153017-6c3afe/frames.csv HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:38] "[35m[1mGET /media/20260911-153017-6c3afe/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [11/Sep/2026 15:30:38] "GET /media/20260911-153017-6c3afe/video_index.csv HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:30:38] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:00] "GET /live/stream?1789129860171 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:00] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:33] "POST /api/record/start HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:33] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:35] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:37] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:39] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:41] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:42] "POST /api/record/stop HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:42] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:43] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:46] "GET /api/session/20260911-153133-02630e HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:46] "[35m[1mGET /media/20260911-153133-02630e/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [11/Sep/2026 15:31:46] "GET /media/20260911-153133-02630e/frames.csv HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:46] "GET /media/20260911-153133-02630e/video_index.csv HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:31:46] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:15] "GET /live/stream?1789129935579 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:15] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:17] "GET /api/settings HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:17] "GET /api/camera/stream HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:29] "POST /api/record/start HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:30] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:32] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:34] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:36] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:38] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:40] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:42] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:43] "POST /api/record/stop HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:43] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:44] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:45] "GET /api/session/20260911-153229-2e7c72 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:45] "GET /media/20260911-153229-2e7c72/frames.csv HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:45] "[35m[1mGET /media/20260911-153229-2e7c72/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [11/Sep/2026 15:32:45] "GET /media/20260911-153229-2e7c72/video_index.csv HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:32:45] "GET /api/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 15:53:43] "GET /api/live/events HTTP/1.1" 200 -

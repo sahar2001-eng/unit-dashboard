@@ -1,0 +1,63 @@
+{
+  "frames": 268,
+  "fps": 30.303,
+  "duration_s": 8.84,
+  "width": 320,
+  "height": 200,
+  "scale": 4,
+  "browser_playable": true,
+  "processing_s": 2.8,
+  "ms_per_frame": 10.6,
+  "turn": null,
+  "sim_cmds": [],
+  "drv_pct": 99.3,
+  "rot_pct": 0.0,
+  "drive_junction_pct": 39.1,
+  "drive_y_only_pct": 60.2,
+  "drive_x_only_pct": 0.0,
+  "drive_none_pct": 0.8,
+  "rot_junction_pct": 0.0,
+  "rot_one_bar_pct": 0.0,
+  "rot_none_pct": 0.0,
+  "x_available_pct": 37.3,
+  "y_available_pct": 98.5,
+  "theta_available_pct": 98.5,
+  "heading_start": 0.0,
+  "heading_end": 0.0,
+  "heading_min": 0.0,
+  "heading_max": 0.0,
+  "events": [
+    "JUNCTION_LANDED X=-1.3 Y=1.8 T=-3.52 q=0",
+    "3 reading(s) rejected as physically impossible (>30mm since the last fix) -- see MAX_STEP_MM",
+    "JUNCTION_LANDED X=2.0 Y=3.0 T=2.80 q=0",
+    "3 reading(s) rejected as physically impossible (>30mm since the last fix) -- see MAX_STEP_MM",
+    "2 reading(s) rejected as physically impossible (>30mm since the last fix) -- see MAX_STEP_MM",
+    "6 reading(s) rejected as physically impossible (>30mm since the last fix) -- see MAX_STEP_MM",
+    "4 reading(s) rejected as physically impossible (>30mm since the last fix) -- see MAX_STEP_MM",
+    "JUNCTION_LANDED X=-4.4 Y=-3.1 T=4.49 q=0",
+    "5 reading(s) rejected as physically impossible (>30mm since the last fix) -- see MAX_STEP_MM",
+    "4 reading(s) rejected as physically impossible (>30mm since the last fix) -- see MAX_STEP_MM"
+  ],
+  "mode_windows": [
+    {
+      "mode": null,
+      "start": 0,
+      "end": 1
+    },
+    {
+      "mode": "DRV",
+      "start": 2,
+      "end": 267
+    }
+  ],
+  "engine_version": "2026-09-16.1",
+  "flight": {
+    "combined": "42c0e45ca251",
+    "files": {
+      "main.py": "ab1baf2d75c7",
+      "turn_sm.py": "b8757048e8af",
+      "rot_scan.py": "153a11dce846",
+      "hud.py": "4d32600b932b"
+    }
+  }
+}

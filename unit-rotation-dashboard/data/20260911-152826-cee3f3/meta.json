@@ -1,0 +1,21 @@
+{
+  "id": "20260911-152826-cee3f3",
+  "name": "20260911-152826-cee3f3",
+  "kind": "live",
+  "created": 1789129706.626983,
+  "state": "done",
+  "notes": "",
+  "duration_s": 2.558,
+  "rows": 165,
+  "frames": 164,
+  "data_fps": 64.5,
+  "video_fps": 64.1,
+  "video": true,
+  "gaps": 0,
+  "max_gap_s": 0.035,
+  "reconnects": 0,
+  "tiers": {
+    "junction": 165
+  },
+  "video_rate": 64.11
+}

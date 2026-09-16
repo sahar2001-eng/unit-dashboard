@@ -1,0 +1,21 @@
+{
+  "id": "20260911-135607-e4db4e",
+  "name": "first run with video",
+  "kind": "live",
+  "created": 1789124167.320578,
+  "state": "done",
+  "notes": "",
+  "duration_s": 12.181,
+  "rows": 1048,
+  "frames": 172,
+  "data_fps": 86.0,
+  "video_fps": 14.1,
+  "video": true,
+  "gaps": 0,
+  "max_gap_s": 0.068,
+  "reconnects": 0,
+  "tiers": {
+    "junction": 1048
+  },
+  "video_rate": 14.12
+}

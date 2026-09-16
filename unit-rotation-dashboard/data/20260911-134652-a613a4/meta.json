@@ -1,0 +1,20 @@
+{
+  "id": "20260911-134652-a613a4",
+  "name": "instrumented run",
+  "kind": "live",
+  "created": 1789123612.301203,
+  "state": "done",
+  "notes": "",
+  "duration_s": 8.035,
+  "rows": 914,
+  "frames": 0,
+  "data_fps": 113.8,
+  "video_fps": 0.0,
+  "video": false,
+  "gaps": 0,
+  "max_gap_s": 0.023,
+  "reconnects": 0,
+  "tiers": {
+    "junction": 914
+  }
+}
