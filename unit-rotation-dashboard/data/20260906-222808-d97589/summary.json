@@ -1,0 +1,103 @@
+{
+  "frames": 89,
+  "fps": 30.303,
+  "duration_s": 2.94,
+  "width": 320,
+  "height": 200,
+  "scale": 3,
+  "m1_step": 2,
+  "smoothing": true,
+  "browser_playable": true,
+  "processing_s": 0.7,
+  "ms_per_frame": 7.6,
+  "total_rotation_deg": 11.87,
+  "heading_min": -11.88,
+  "heading_max": 15.83,
+  "peak_rate_dps": 81.0,
+  "junction_pct": 31.5,
+  "mini_junction_pct": 15.7,
+  "single_bar_pct": 52.8,
+  "m1_only_pct": 0.0,
+  "x_available_pct": 47.2,
+  "y_available_pct": 100.0,
+  "heading_available_pct": 100.0,
+  "travel_mm": 271.3,
+  "junction_crossings": 12,
+  "mean_speed_mms": 92.4,
+  "jumps_rejected": 6,
+  "mode_switches": 39,
+  "otsu_min": 27,
+  "otsu_max": 63,
+  "otsu_swing": 36,
+  "sharpness_median": 12.7,
+  "sharpness_worst": 6.8,
+  "lateral_rms_mm": 10.33,
+  "median_residual_px": 0.256,
+  "p95_residual_px": 2.416,
+  "jitter_raw_deg": 1.1185,
+  "jitter_smoothed_deg": 0.4012,
+  "outliers_rejected": 0,
+  "coverage": [
+    {
+      "from": -45,
+      "to": -30,
+      "frames": 0,
+      "junction_pct": 0.0,
+      "fix_pct": 0.0
+    },
+    {
+      "from": -30,
+      "to": -15,
+      "frames": 0,
+      "junction_pct": 0.0,
+      "fix_pct": 0.0
+    },
+    {
+      "from": -15,
+      "to": 0,
+      "frames": 34,
+      "junction_pct": 35.3,
+      "fix_pct": 50.0
+    },
+    {
+      "from": 0,
+      "to": 15,
+      "frames": 50,
+      "junction_pct": 22.0,
+      "fix_pct": 40.0
+    },
+    {
+      "from": 15,
+      "to": 30,
+      "frames": 5,
+      "junction_pct": 100.0,
+      "fix_pct": 100.0
+    },
+    {
+      "from": 30,
+      "to": 45,
+      "frames": 0,
+      "junction_pct": 0.0,
+      "fix_pct": 0.0
+    }
+  ],
+  "turns": [
+    {
+      "start_frame": 45,
+      "end_frame": 88,
+      "start_s": 1.485,
+      "end_s": 2.904,
+      "duration_s": 1.419,
+      "degrees": 17.6,
+      "peak_rate": 81.0,
+      "quarter_turn": false,
+      "nearest_90": null,
+      "error_vs_90": null
+    }
+  ],
+  "y_range_mm": [
+    -19.9,
+    6.2
+  ],
+  "engine_version": "2026-09-06.9"
+}
