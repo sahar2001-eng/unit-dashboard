@@ -1,4 +1,0 @@
-flask>=3.0
-pyserial>=3.5
-imageio-ffmpeg>=0.4.9
-gunicorn>=21.0
