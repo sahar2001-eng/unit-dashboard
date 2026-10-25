@@ -28,7 +28,7 @@
 <main class="upd-main">
   <div class="upd-intro">
     <h2>Updates</h2>
-    <p>Where we are, what we did, what changed and what is next — one place we both update.</p>
+    <p>Where we are, what we did, what changed and what is next — one place we both update. Attach documents, pictures or videos to any update.</p>
   </div>
 
   <section id="latest" class="upd-latest"></section>
@@ -53,11 +53,20 @@
         <label><span>Area</span><select name="area"></select></label>
         <label><span>Your name</span><input name="author" maxlength="60" placeholder="e.g. Sahar"></label>
       </div>
-      <label><span>Title</span><input name="title" maxlength="160" required placeholder="One line: what this update is about"></label>
-      <label><span>Where we are</span><textarea name="where" rows="2" placeholder="The state right now"></textarea></label>
-      <label><span>What we did</span><textarea name="did" rows="4" placeholder="Work done, tests run, results"></textarea></label>
-      <label><span>What changed</span><textarea name="changed" rows="3" placeholder="Changes to the code, settings, numbers"></textarea></label>
-      <label><span>Next</span><textarea name="next" rows="2" placeholder="Next steps, open questions"></textarea></label>
+      <label><span>Title</span><input dir="auto" name="title" maxlength="160" required placeholder="One line: what this update is about"></label>
+      <label><span>Where we are</span><textarea dir="auto" name="where" rows="2" placeholder="The state right now"></textarea></label>
+      <label><span>What we did</span><textarea dir="auto" name="did" rows="4" placeholder="Work done, tests run, results"></textarea></label>
+      <label><span>What changed</span><textarea dir="auto" name="changed" rows="3" placeholder="Changes to the code, settings, numbers"></textarea></label>
+      <label><span>Next</span><textarea dir="auto" name="next" rows="2" placeholder="Next steps, open questions"></textarea></label>
+      <div class="files-field">
+        <span class="ff-label">Files <em>Word, PDF, Excel, pictures, videos… up to 200 MB each</em></span>
+        <div id="fileDrop" class="file-drop">
+          Drop files here or <button type="button" class="link" id="filePick">choose files</button>
+          <input type="file" id="fileInput" multiple hidden>
+        </div>
+        <ul id="fileList" class="file-list"></ul>
+      </div>
+      <div id="upProg" class="progress" hidden><div class="bar"><i id="upBar"></i></div><p id="upText"></p></div>
       <p id="formErr" class="error" hidden></p>
       <div class="form-btns">
         <button type="button" id="cancel" class="btn">Cancel</button>

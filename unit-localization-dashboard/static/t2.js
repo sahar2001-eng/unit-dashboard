@@ -392,6 +392,7 @@ function drawCards(s) {
 /* ------------------------------------------------------------- use cases */
 async function loadCases() {
   CASES = await api("/api/t2/cases");
+  for (const k in CASE_NAME) delete CASE_NAME[k];
   const sel = $("#caseSel");
   sel.innerHTML = `<option value="">— none —</option>`;
   CASES.sections.forEach((sec) => {
@@ -407,24 +408,99 @@ async function loadCases() {
   });
 }
 
+let CASE_EDIT = false;
+const jpost = (u, method, body) => api(u, { method, headers: { "Content-Type": "application/json" },
+  body: body ? JSON.stringify(body) : undefined });
+
+async function refreshCases() {
+  CASES = await api("/api/t2/cases");
+  await loadCases();
+  drawCasesModal();
+}
+
 function drawCasesModal() {
   const host = $("#casesList");
   $("#casesTitle").textContent = CASES.title;
+  $("#casesEdit").textContent = CASE_EDIT ? "Done" : "Add / delete cases";
+  $("#casesEdit").classList.toggle("primary", CASE_EDIT);
+  $("#casesHint").textContent = CASE_EDIT
+    ? "Add a case at the bottom of a section, click a title to change it, × deletes. Saved for everyone."
+    : "Click a case to see only the runs tagged with it. Counts are runs analysed so far.";
   host.innerHTML = "";
   CASES.sections.forEach((sec) => {
     const d = document.createElement("div");
     d.className = "case-sec";
     d.innerHTML = `<h4>${esc(sec.id)}. ${esc(sec.name)}</h4>`;
+    if (CASE_EDIT && !sec.cases.length) {
+      const del = document.createElement("button");
+      del.className = "link small danger";
+      del.textContent = "delete empty section";
+      del.onclick = async () => {
+        const r = await jpost("/api/t2/cases/section/" + encodeURIComponent(sec.id), "DELETE");
+        if (r.error) alert(r.error); else refreshCases();
+      };
+      d.querySelector("h4").appendChild(del);
+    }
     sec.cases.forEach((c) => {
-      const b = document.createElement("button");
-      b.className = "case-row" + (CASE_FILTER === c.id ? " on" : "");
-      b.innerHTML = `<span class="case-id">${esc(c.id)}</span><span>${esc(c.title)}</span>
-        <span class="case-n ${c.runs ? "" : "zero"}">${c.runs} run${c.runs === 1 ? "" : "s"}</span>`;
-      b.onclick = () => { CASE_FILTER = c.id; $("#casesModal").hidden = true; loadSessions(); };
-      d.appendChild(b);
+      if (!CASE_EDIT) {
+        const b = document.createElement("button");
+        b.className = "case-row" + (CASE_FILTER === c.id ? " on" : "");
+        b.innerHTML = `<span class="case-id">${esc(c.id)}</span><span>${esc(c.title)}</span>
+          <span class="case-n ${c.runs ? "" : "zero"}">${c.runs} run${c.runs === 1 ? "" : "s"}</span>`;
+        b.onclick = () => { CASE_FILTER = c.id; $("#casesModal").hidden = true; loadSessions(); };
+        d.appendChild(b);
+        return;
+      }
+      const row = document.createElement("div");
+      row.className = "case-row edit";
+      row.innerHTML = `<span class="case-id">${esc(c.id)}</span>
+        <input class="case-title-in" maxlength="200">
+        <button class="case-del" title="Delete this case" aria-label="Delete">&times;</button>`;
+      const inp = row.querySelector("input");
+      inp.value = c.title;
+      inp.onkeydown = (e) => { if (e.key === "Enter") inp.blur(); };
+      inp.onblur = async () => {
+        const t = inp.value.trim();
+        if (!t || t === c.title) { inp.value = c.title; return; }
+        const r = await jpost("/api/t2/cases/case/" + encodeURIComponent(c.id), "PUT", { title: t });
+        if (r.error) alert(r.error); else { c.title = t; CASE_NAME[c.id] = t; }
+      };
+      row.querySelector(".case-del").onclick = async () => {
+        const warn = c.runs ? `\n${c.runs} run${c.runs === 1 ? " is" : "s are"} tagged with it; they keep the tag ${c.id}.` : "";
+        if (!confirm(`Delete use case ${c.id}?\n"${c.title}"${warn}`)) return;
+        const r = await jpost("/api/t2/cases/case/" + encodeURIComponent(c.id), "DELETE");
+        if (r.error) alert(r.error); else refreshCases();
+      };
+      d.appendChild(row);
     });
+    if (CASE_EDIT) {
+      const add = document.createElement("form");
+      add.className = "case-add";
+      add.innerHTML = `<input placeholder="New use case in ${esc(sec.name)}…" maxlength="200"><button class="btn small">Add</button>`;
+      add.onsubmit = async (e) => {
+        e.preventDefault();
+        const t = add.querySelector("input").value.trim();
+        if (!t) return;
+        const r = await jpost("/api/t2/cases/case", "POST", { section: sec.id, title: t });
+        if (r.error) alert(r.error); else refreshCases();
+      };
+      d.appendChild(add);
+    }
     host.appendChild(d);
   });
+  if (CASE_EDIT) {
+    const add = document.createElement("form");
+    add.className = "case-add sec";
+    add.innerHTML = `<input placeholder="New section name…" maxlength="120"><button class="btn small">Add section</button>`;
+    add.onsubmit = async (e) => {
+      e.preventDefault();
+      const t = add.querySelector("input").value.trim();
+      if (!t) return;
+      const r = await jpost("/api/t2/cases/section", "POST", { name: t });
+      if (r.error) alert(r.error); else refreshCases();
+    };
+    host.appendChild(add);
+  }
 }
 
 function drawCase(m) {
@@ -490,7 +566,8 @@ function init() {
     const r = await api(`/api/t2/session/${SESSION.id}/rerun`, { method: "POST" });
     if (r.id) { loadSessions(); watch(r.id); }
   };
-  $("#casesBtn").onclick = async () => { await loadCases(); CASES = await api("/api/t2/cases"); drawCasesModal(); $("#casesModal").hidden = false; };
+  $("#casesBtn").onclick = async () => { CASE_EDIT = false; await refreshCases(); $("#casesModal").hidden = false; };
+  $("#casesEdit").onclick = () => { CASE_EDIT = !CASE_EDIT; drawCasesModal(); };
   $("#railFilterClear").onclick = () => { CASE_FILTER = ""; loadSessions(); };
   document.querySelectorAll(".info-modal").forEach((m) => {
     m.querySelector(".info-backdrop").onclick = () => (m.hidden = true);

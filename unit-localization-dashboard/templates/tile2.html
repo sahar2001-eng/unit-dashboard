@@ -178,7 +178,10 @@
   <div class="info-card cases-card">
     <button id="casesClose" class="info-close" aria-label="Close">&times;</button>
     <h3 id="casesTitle">Use cases</h3>
-    <p class="muted small">Click a case to see only the runs tagged with it. Counts are runs analysed so far.</p>
+    <div class="cases-bar">
+      <p id="casesHint" class="muted small">Click a case to see only the runs tagged with it. Counts are runs analysed so far.</p>
+      <button id="casesEdit" class="btn small">Add / delete cases</button>
+    </div>
     <div id="casesList" class="cases-list"></div>
   </div>
 </div>
