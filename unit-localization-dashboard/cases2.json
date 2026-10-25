@@ -1,0 +1,194 @@
+{
+ "title": "It’s all about robustness — Tile 2 (UNIT16 hole grid)",
+ "source": "Tile 1 use-case list, reworded for the hole plate, plus Tile 2 items (3.4, 4.6, 5.4, 6.4, section 8)",
+ "sections": [
+  {
+   "id": "1",
+   "name": "Plate / surface condition",
+   "cases": [
+    {
+     "id": "1.1",
+     "title": "Worn or scratched plate — part of a bar is thinner or rubbed"
+    },
+    {
+     "id": "1.2",
+     "title": "Foreign tape or debris crossing the grid diagonally — gets mistaken for a real bar"
+    },
+    {
+     "id": "1.3",
+     "title": "Dirty or dusty plate — less contrast between bars and holes"
+    },
+    {
+     "id": "1.4",
+     "title": "Plate seam or joint — a thin dark gap splits one bar into two pieces"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "name": "Lighting",
+   "cases": [
+    {
+     "id": "2.1",
+     "title": "Uneven lighting across the frame — one side dimmer than the other"
+    },
+    {
+     "id": "2.2",
+     "title": "Glare or bright spot on the plate"
+    },
+    {
+     "id": "2.3",
+     "title": "Shadow across the grid — from the robot, a person, or an object"
+    },
+    {
+     "id": "2.4",
+     "title": "Too dark — weak contrast"
+    },
+    {
+     "id": "2.5",
+     "title": "Too bright — washed out, contrast lost"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "name": "Geometry & viewing angle",
+   "cases": [
+    {
+     "id": "3.1",
+     "title": "Camera not pointed straight down — slightly tilted mount"
+    },
+    {
+     "id": "3.2",
+     "title": "Camera height changes — changes how big things look, throws off distance"
+    },
+    {
+     "id": "3.3",
+     "title": "Bar spacing not exactly what the code expects — plate made a bit off size"
+    },
+    {
+     "id": "3.4",
+     "title": "Lens bend — bars far from the image centre look curved"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "name": "Motion / dynamics",
+   "cases": [
+    {
+     "id": "4.1",
+     "title": "Turning too fast — angle jumps too much between frames to follow"
+    },
+    {
+     "id": "4.2",
+     "title": "Moving very slowly between junctions — looks stopped when it isn't"
+    },
+    {
+     "id": "4.3",
+     "title": "Motion blur — image smears when moving fast"
+    },
+    {
+     "id": "4.4",
+     "title": "Turn stopped before it finished"
+    },
+    {
+     "id": "4.5",
+     "title": "Sudden bump, drop, or collision"
+    },
+    {
+     "id": "4.6",
+     "title": "Fast back-and-forth over a junction — position must not jump to the wrong junction"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "name": "Junction edge cases",
+   "cases": [
+    {
+     "id": "5.1",
+     "title": "Two junctions in view at the same time"
+    },
+    {
+     "id": "5.2",
+     "title": "Junction cut off at the edge of the frame"
+    },
+    {
+     "id": "5.3",
+     "title": "Junction missing or broken"
+    },
+    {
+     "id": "5.4",
+     "title": "Camera half way between two code junctions — only the plain wide bar is near (must not be used for X)"
+    },
+    {
+     "id": "5.5",
+     "title": "Robot's path not centred on the frame"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "name": "Foreign objects / obstructions",
+   "cases": [
+    {
+     "id": "6.1",
+     "title": "Loose tape or debris crossing the grid"
+    },
+    {
+     "id": "6.2",
+     "title": "Small objects sitting on the grid — dust, dropped parts"
+    },
+    {
+     "id": "6.3",
+     "title": "Cables or wires crossing the floor"
+    },
+    {
+     "id": "6.4",
+     "title": "Pod legs in the big round holes"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "name": "Calibration",
+   "cases": [
+    {
+     "id": "7.1",
+     "title": "Wrong mm-per-pixel setting — distances read wrong"
+    },
+    {
+     "id": "7.2",
+     "title": "Wrong lens setting (K1) — lines stay bent or get over-corrected"
+    },
+    {
+     "id": "7.3",
+     "title": "Settings drift over time — from heat or age"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "name": "Code read (UNIT16 holes)",
+   "cases": [
+    {
+     "id": "8.1",
+     "title": "Code hole filled wrong on the prototype — one bit flipped"
+    },
+    {
+     "id": "8.2",
+     "title": "Code block partly out of the frame"
+    },
+    {
+     "id": "8.3",
+     "title": "Code read while moving fast or turning"
+    },
+    {
+     "id": "8.4",
+     "title": "Plain junction pattern that looks like a code"
+    }
+   ]
+  }
+ ]
+}

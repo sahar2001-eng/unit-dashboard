@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
 <link rel="icon" href="{{ url_for('static', filename='mark.svg') }}">
 </head>
 <body>
@@ -18,6 +19,7 @@
     <span class="divider"></span>
     <h1>Grid localization analytics</h1>
   </div>
+  {% include "_nav.html" %}
   <div class="head-actions">
     <button id="casesBtn" class="btn">Use cases</button>
     <button id="newRun" class="btn primary">Analyse a video</button>

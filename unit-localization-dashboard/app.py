@@ -321,6 +321,14 @@ def media(sid, fn):
     return send_from_directory(d, fn, conditional=True)
 
 
+# ---- added: Tile 2 and Updates sections. They live in their own files
+#      (tile2.py, engine2.py, updates.py); nothing above this line changed.
+import tile2      # noqa: E402
+import updates    # noqa: E402
+app.register_blueprint(tile2.bp)
+app.register_blueprint(updates.bp)
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     print("\n  UNIT grid localization analytics -> http://127.0.0.1:%d" % port)

@@ -1,0 +1,6 @@
+{% set a = active|default('tile1') %}
+<nav class="site-nav" aria-label="Sections">
+  <a href="/" class="{{ 'on' if a == 'tile1' else '' }}">Tile 1 <span>tape grid</span></a>
+  <a href="/tile2" class="{{ 'on' if a == 'tile2' else '' }}">Tile 2 <span>UNIT16 holes</span></a>
+  <a href="/updates" class="{{ 'on' if a == 'updates' else '' }}">Updates</a>
+</nav>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Updates — UNIT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+<link rel="icon" href="{{ url_for('static', filename='mark.svg') }}">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <img src="{{ url_for('static', filename='mark.svg') }}" alt="UNIT" height="22">
+    <span class="divider"></span>
+    <h1>Grid localization analytics</h1>
+  </div>
+  {% include "_nav.html" %}
+  <div class="head-actions">
+    <button id="newUpd" class="btn primary">New update</button>
+  </div>
+</header>
+
+<main class="upd-main">
+  <div class="upd-intro">
+    <h2>Updates</h2>
+    <p>Where we are, what we did, what changed and what is next — one place we both update.</p>
+  </div>
+
+  <section id="latest" class="upd-latest"></section>
+
+  <div class="upd-tools">
+    <div id="areaChips" class="chips"></div>
+    <input id="search" type="search" placeholder="Search updates…">
+  </div>
+
+  <section id="list" class="upd-list"></section>
+  <p id="empty" class="muted" hidden>No updates yet. Click “New update”.</p>
+</main>
+
+<div id="formModal" class="info-modal" hidden>
+  <div class="info-backdrop"></div>
+  <div class="info-card upd-form">
+    <button class="info-close" aria-label="Close">&times;</button>
+    <h3 id="formTitle">New update</h3>
+    <form id="form">
+      <div class="row3">
+        <label><span>Date</span><input type="date" name="date" required></label>
+        <label><span>Area</span><select name="area"></select></label>
+        <label><span>Your name</span><input name="author" maxlength="60" placeholder="e.g. Sahar"></label>
+      </div>
+      <label><span>Title</span><input name="title" maxlength="160" required placeholder="One line: what this update is about"></label>
+      <label><span>Where we are</span><textarea name="where" rows="2" placeholder="The state right now"></textarea></label>
+      <label><span>What we did</span><textarea name="did" rows="4" placeholder="Work done, tests run, results"></textarea></label>
+      <label><span>What changed</span><textarea name="changed" rows="3" placeholder="Changes to the code, settings, numbers"></textarea></label>
+      <label><span>Next</span><textarea name="next" rows="2" placeholder="Next steps, open questions"></textarea></label>
+      <p id="formErr" class="error" hidden></p>
+      <div class="form-btns">
+        <button type="button" id="cancel" class="btn">Cancel</button>
+        <button type="submit" class="btn primary" id="save">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='updates.js') }}"></script>
+</body>
+</html>
