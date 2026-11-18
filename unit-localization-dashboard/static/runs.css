@@ -1,0 +1,22 @@
+/* runs.css -- the Runs page only. Loaded after style.css and site.css. */
+body.runs .tile-chips{display:flex;gap:6px;padding:0 18px 12px}
+body.runs .tile-chips.in-modal{padding:0 0 10px}
+body.runs .how{margin-bottom:16px}
+body.runs .how ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px;font-size:13.5px}
+body.runs .how code,body.runs .drop code{background:var(--tint);padding:1px 6px;border-radius:4px;font-size:12.5px}
+body.runs .opts input{border:1.5px solid var(--line-strong);border-radius:8px;padding:8px 10px;background:var(--paper);min-width:220px}
+body.runs .step{display:flex;gap:8px;margin-top:14px}
+body.runs .cmp-pick{display:flex;flex-direction:column;gap:4px;margin-top:14px;font-size:12px}
+body.runs .cmp-pick span{color:var(--ink-35);font-weight:600;text-transform:uppercase;letter-spacing:.03em;font-size:11px}
+body.runs .cmp-pick select{border:1.5px solid var(--line-strong);border-radius:7px;padding:6px 8px;background:var(--paper)}
+body.runs .cmp-box{border-top:2px solid #2A2F44}
+body.runs .cmp-label{margin:0;padding:6px 12px;background:#2A2F44;color:#C9D3F5;font-size:12px}
+body.runs .cmp-box video{width:100%;display:block;background:#000}
+body.runs .trace.cmp{stroke:#8E98B8;stroke-width:1.4;stroke-dasharray:5 4}
+body.runs textarea#notes{width:100%;min-height:90px;border:1.5px solid var(--line-strong);border-radius:8px;padding:8px 10px;resize:vertical;box-sizing:border-box}
+body.runs .live dd{font-size:18px}
+@media (max-width:900px){
+  body.runs .shell{grid-template-columns:1fr}
+  body.runs .scope{grid-template-columns:1fr}
+  body.runs .lower.four{grid-template-columns:1fr}
+}

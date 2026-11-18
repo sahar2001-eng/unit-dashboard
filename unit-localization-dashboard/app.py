@@ -328,6 +328,10 @@ import updates    # noqa: E402
 app.register_blueprint(tile2.bp)
 app.register_blueprint(updates.bp)
 
+# ---- added: Runs section (show only; runs are made on a PC, runkit/run.py)
+import runs       # noqa: E402
+app.register_blueprint(runs.bp)
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
